@@ -10,6 +10,7 @@ const SearchBox = () =>{
   return(
     <div>
       <h2>Cross Modal Search</h2>
+      <h2>Wikipidia Search</h2> 
       <jina-searchbar></jina-searchbar>
       <CustomScriptTag src ="https://unpkg.com/jinabox@0.1.49/dist/jinabox.umd.min.js" onLoad = {onLoad}/>
     </div>
