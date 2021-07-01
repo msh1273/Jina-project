@@ -9,6 +9,11 @@ const Search = ({input, result, buttonVisible, setInput, search}) => {
   return (
     <form className="search">
         <SearchBox/>
+        <div className="search__input">
+        <SearchIcon className="search__inputIcon" />
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <img src={sendIcon} onClick={search} alt="search"/>
+      </div>
       {result? (<div className="search__result">
         {result}
       </div>) : null}

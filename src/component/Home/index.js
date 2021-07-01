@@ -25,7 +25,7 @@ const Home = ({input, result, buttonVisible, setInput, search}) => {
             <img src={ainizeIcon} alt="ainize"/>
             Powered by Ainize
           </a>
-          <a href="" className="github">
+          <a href="https://github.com/msh1273/Jina-project" className="github">
             <img src={githubIcon} alt="github"/>
             Contribute on GitHub
           </a>
