@@ -10,12 +10,13 @@ const HomeContainer = ({hideButtons = false}) => {
     e.preventDefault();
 
     console.log("You hit search", input);
-    setResult('nono')
+    setResult(input)
     setButtonVisible(true)
     // Show the result
     // let result = await gpt3.getSnippetPrediction(input)
     // console.log(result.data.answer)
     // setResult(result.data.answer)
+    
   };
   return (
     <Home

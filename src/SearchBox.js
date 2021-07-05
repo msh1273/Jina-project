@@ -9,12 +9,8 @@ const SearchBox = () =>{
   }
   return(
     <div>
-    <div>
       <jina-searchbar></jina-searchbar>
-
       <CustomScriptTag src ="https://unpkg.com/jinabox@0.1.49/dist/jinabox.umd.min.js" onLoad = {onLoad}/>
-    </div>
-    <hr/>
     </div>
   );
 }

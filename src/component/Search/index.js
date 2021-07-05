@@ -8,12 +8,12 @@ import SearchBox from '../../SearchBox.js'
 const Search = ({input, result, buttonVisible, setInput, search}) => {
   return (
     <form className="search">
-        <SearchBox/>
+        {/* <SearchBox/> */}
         <div className="search__input">
         <SearchIcon className="search__inputIcon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <img src={sendIcon} onClick={search} alt="search"/>
-      </div>
+      </div> 
       {result? (<div className="search__result">
         {result}
       </div>) : null}
