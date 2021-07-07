@@ -10,7 +10,7 @@ function App() {
   console.log(firebaseInit)
   return (
     <div className="App">
-      <h1>Jina Box Example 테스트</h1>
+      <h1>테스트 페이지 입니다.</h1>
       <Router>
         <Switch>
           <Route path="/search" component={SearchPage}/>

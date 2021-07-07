@@ -14,22 +14,15 @@ const Search = ({input, result, buttonVisible, setInput, search}) => {
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <img src={sendIcon} onClick={search} alt="search"/>
       </div> 
-      {result? (<div className="search__result">
-        {result}
-      </div>) : null}
+      
       {!buttonVisible ? (
         <div className="search__buttons">
-          <Button type="submit" onClick={search} variant="outlined">
-            Google Search
-          </Button>
-          <Button variant="outlined">I'm Feeling Lucky</Button>
+          <Button type="submit" onClick={search} variant="outlined">Google Search</Button>
+          <Button variant="outlined" type="submit" onClick={search}>I'm Feeling Lucky</Button>
         </div>
       ) : (
         <div className="search__buttons">
-          <Button className="search__buttonsHidden" type="submit" onClick={search} variant="outlined">
-            Google Search
-          </Button>
-          <Button className="search__buttonsHidden" variant="outlined">I'm Feeling Lucky</Button>
+
         </div>
       )}
     </form>

@@ -22,7 +22,7 @@ const SearchPage = ({term, data}) => {
         </Link>
 
         <div className="searchPage__headerbody">
-          <Search hideButtons />
+          <Search buttonVisible="true"/>
 
           <div className="searchPage__options">
             <div className="searchPage__optionsLeft">

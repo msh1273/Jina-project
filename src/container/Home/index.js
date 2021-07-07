@@ -8,10 +8,11 @@ const HomeContainer = ({hideButtons = false}) => {
 
   const search = async (e) => {
     e.preventDefault();
-
+    // window.location.href = "/search"
     console.log("You hit search", input);
-    setResult(input)
+    setResult("nono")
     setButtonVisible(true)
+    
     // Show the result
     // let result = await gpt3.getSnippetPrediction(input)
     // console.log(result.data.answer)
